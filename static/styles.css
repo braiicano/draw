@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #252525;
+  position: relative;
+}
+.container #app {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fefefe;
+}
+#app .color-panel {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#app .color-panel button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #eee;
+  font-size: 1.75rem;
+  font-weight: bold;
+  transition: text-shadow 0.15s;
+}
+#app .color-panel button:hover {
+  text-shadow: 1px 1px #252525;
+}
+button#red,
+.red {
+  background-color: #f00;
+}
+button#orange,
+.orange {
+  background-color: #f80;
+}
+button#yellow,
+.yellow {
+  background-color: #ff0;
+}
+button#green,
+.green {
+  background-color: #0f0;
+}
+button#blue,
+.blue {
+  background-color: #00f;
+}
+button#anil,
+.anil {
+  background-color: #008;
+}
+button#purple,
+.purple {
+  background-color: #80f;
+}
+button#pink,
+.pink {
+  background-color: #f0f;
+}
+button#black,
+.black {
+  background-color: #000;
+}
+button#white,
+.white {
+  background-color: #fff;
+  color: #000 !important;
+}
+button#white:hover {
+  text-shadow: 1px 1px #aaa !important;
+}
+button#grey,
+.grey {
+  background-color: #888;
+}
+button#brown,.brown{
+  background-color: rgb(88, 39, 7);
+}
+.draw-panel {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-wrap: wrap;
+}
+.draw-space {
+  width: 20%;
+  height: 20%;
+  cursor: cell;
+  border: 1px solid black;
+}
