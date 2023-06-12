@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  gap: 0;
 }
 .container {
   width: 100%;
@@ -11,8 +12,8 @@
 }
 .container #app {
   position: absolute;
-  width: 80%;
-  height: 90%;
+  /* width: 100%; */
+  /* height: 100%; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -52,7 +53,7 @@ button#yellow,
 }
 button#green,
 .green {
-  background-color: #0f0;
+  background-color: #080;
 }
 button#blue,
 .blue {
@@ -86,8 +87,29 @@ button#grey,
 .grey {
   background-color: #888;
 }
-button#brown,.brown{
+button#brown,
+.brown {
   background-color: rgb(88, 39, 7);
+}
+button#beige,
+.beige {
+  background-color: #f8a;
+}
+button#greenlight,
+.greenlight {
+  background-color: #0f0;
+}
+button#bluelight,
+.bluelight {
+  background-color: #00f7ff;
+}
+button#darkgreen,
+.darkgreen {
+  background-color: #005500;
+}
+button#darkyellow,
+.darkyellow {
+  background-color: #aa8800;
 }
 .draw-panel {
   display: flex;
@@ -96,8 +118,14 @@ button#brown,.brown{
   flex-wrap: wrap;
 }
 .draw-space {
-  width: 20%;
-  height: 20%;
+  width: 6.25%;
+  height: 8.25%;
   cursor: cell;
-  border: 1px solid black;
+  border: 1px solid #0004;
+}
+.hidden {
+  display: none !important;
+}
+.height {
+  height: 100% !important;
 }
